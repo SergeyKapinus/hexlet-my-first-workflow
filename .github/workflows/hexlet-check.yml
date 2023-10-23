@@ -1,0 +1,13 @@
+name: hello-world
+
+on: push
+jobs:
+
+  build:
+    # операционная система для работы воркфлоу
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - run: make sau-hello
